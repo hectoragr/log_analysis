@@ -1,16 +1,25 @@
 # Log Analysis project for Udacity
 
-## Questions
+## Introduction
+This project sets up a mock PostgreSQL database for a fictional news website. The provided Python script uses the psycopg2 library to query the database and produce a report that answers the following three questions:
+### Questions
+    1. What are the most popular three articles of all time? Which articles have been accessed the most? Present this information as a sorted list with the most popular article at the top.
 
-1. What are the most popular three articles of all time? Which articles have been accessed the most? Present this information as a sorted list with the most popular article at the top.
+    2. Who are the most popular article authors of all time? That is, when you sum up all of the articles each author has written, which authors get the most page views? Present this as a sorted list with the most popular author at the top.
 
-2. Who are the most popular article authors of all time? That is, when you sum up all of the articles each author has written, which authors get the most page views? Present this as a sorted list with the most popular author at the top.
+    3. On which days did more than 1% of requests lead to errors? The log table includes a column status that indicates the HTTP status code that the news site sent to the user's browser.
 
-3. On which days did more than 1% of requests lead to errors? The log table includes a column status that indicates the HTTP status code that the news site sent to the user's browser.
+## Requirements
+- Python3
+- Vagrant / Virtual Box (config: https://github.com/udacity/fullstack-nanodegree-vm)
+- PostgreSQL
+- psycopg2
 
 ## How to run
 
-- Using python3 execute command `python3 solution.py` having the DB set up and the libraries installed
+- After setting up Vagrant and install all requisites, load the data into psql from [this file | https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip]
+- Make sure you have access to the table and rows from the above sql file
+- Using python3 execute command `python3 solution.py`, this will answer the 3 questions asked above
 
 ## Sample Output
 
